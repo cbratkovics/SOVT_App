@@ -16,6 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Teams" />
+        <activity android:name=".Schedules" />
+        <activity android:name=".Navigation" />
+        <activity android:name=".General"></activity>
     </application>
 
 </manifest>
