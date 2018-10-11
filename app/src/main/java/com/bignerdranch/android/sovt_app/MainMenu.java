@@ -5,7 +5,7 @@ import android.os.Bundle;
 
 public class MainMenu extends AppCompatActivity {
 
-    //this a class
+    //this is the interface for the main menu
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

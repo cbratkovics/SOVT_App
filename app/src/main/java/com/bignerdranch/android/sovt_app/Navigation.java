@@ -5,7 +5,7 @@ import android.os.Bundle;
 
 public class Navigation extends AppCompatActivity {
 
-    //this is a class
+    //this is the interface for event navigation
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
