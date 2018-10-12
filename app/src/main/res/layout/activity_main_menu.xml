@@ -15,7 +15,7 @@
         app:srcCompat="@drawable/logo_wide" />
 
     <Button
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="60dp"
         android:layout_width="360dp"
         android:layout_height="80dp"
         android:textSize="26sp"
