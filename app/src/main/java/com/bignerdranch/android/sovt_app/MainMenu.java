@@ -37,7 +37,7 @@ public class MainMenu extends AppCompatActivity {
         });
 
         //schedule button
-        mScheduleButton = (Button) findViewById(R.id.schedule_button);
+        mScheduleButton = (Button) findViewById(R.id.schedules_button);
         mScheduleButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

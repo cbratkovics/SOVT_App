@@ -16,6 +16,7 @@
         app:srcCompat="@drawable/logo_tall" />
 
     <Button
+        android:id="@+id/navigation_button"
         android:layout_marginTop="20dp"
         android:layout_width="360dp"
         android:layout_height="80dp"
@@ -23,6 +24,7 @@
         android:text="@string/navigation_button" />
 
     <Button
+        android:id="@+id/schedules_button"
         android:layout_marginTop="5dp"
         android:layout_width="360dp"
         android:layout_height="80dp"
@@ -30,6 +32,7 @@
         android:text="@string/schedules_button" />
 
     <Button
+        android:id="@+id/teams_button"
         android:layout_marginTop="5dp"
         android:layout_width="360dp"
         android:layout_height="80dp"
@@ -37,13 +40,11 @@
         android:text="@string/teams_button" />
 
     <Button
+        android:id="@+id/general_button"
         android:layout_marginTop="5dp"
         android:layout_width="360dp"
         android:layout_height="80dp"
         android:textSize="26sp"
         android:text="@string/general_button" />
-
-
-
 
 </LinearLayout>
