@@ -8,21 +8,25 @@
     android:orientation="vertical">
 
     <Button
+        android:id="@+id/navigation_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/navigation_button" />
 
     <Button
+        android:id="@+id/schedule_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/schedules_button" />
+        android:text="@string/schedule_button" />
 
     <Button
+        android:id="@+id/teams_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/teams_button" />
 
     <Button
+        android:id="@+id/general_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/general_button" />

@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">SOVT_App</string>
     <string name="navigation_button">Navigation</string>
-    <string name="schedules_button">Schedules</string>
+    <string name="schedule_button">Schedule</string>
     <string name="teams_button">Team Info</string>
     <string name="general_button">General Info</string>
+    <string name="home_button">Home</string>
 </resources>
