@@ -9,13 +9,14 @@
     android:orientation="vertical">
 
     <ImageView
+        android:layout_marginTop="10dp"
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
-        android:layout_height="160dp"
-        app:srcCompat="@drawable/logo_wide" />
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/logo_tall" />
 
     <Button
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="20dp"
         android:layout_width="360dp"
         android:layout_height="80dp"
         android:textSize="26sp"
