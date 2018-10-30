@@ -19,7 +19,8 @@
         <activity android:name=".TeamInfo" />
         <activity android:name=".Schedule" />
         <activity android:name=".Navigation" />
-        <activity android:name=".General"></activity>
+        <activity android:name=".General" />
+        <activity android:name=".PDFActivity"></activity>
     </application>
 
 </manifest>

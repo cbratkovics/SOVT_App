@@ -21,7 +21,7 @@ public class TeamInfo extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_general);
+        setContentView(R.layout.activity_team_info);
         Log.d(TAG, "TeamInfo onCreate(Bundle) called");
 
         //return to home page button

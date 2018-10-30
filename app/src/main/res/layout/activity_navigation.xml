@@ -8,10 +8,36 @@ tools:context=".Navigation"
 android:gravity="center"
 android:orientation="vertical">
 
-<Button
-    android:id="@+id/home_button"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="@string/home_button" />
+    <Button
+        android:id="@+id/home_button"
+        android:layout_marginTop="5dp"
+        android:layout_width="360dp"
+        android:layout_height="80dp"
+        android:textSize="26sp"
+        android:text="@string/home_button" />
+
+    <Button
+        android:id="@+id/mountain_map"
+        android:layout_marginTop="5dp"
+        android:layout_width="360dp"
+        android:layout_height="80dp"
+        android:textSize="26sp"
+        android:text="@string/mountain_map" />
+
+    <Button
+        android:id="@+id/lodge_map"
+        android:layout_marginTop="5dp"
+        android:layout_width="360dp"
+        android:layout_height="80dp"
+        android:textSize="26sp"
+        android:text="@string/lodge_map" />
+
+    <Button
+        android:id="@+id/directions"
+        android:layout_marginTop="5dp"
+        android:layout_width="360dp"
+        android:layout_height="80dp"
+        android:textSize="26sp"
+        android:text="@string/directions" />
 
 </LinearLayout>
