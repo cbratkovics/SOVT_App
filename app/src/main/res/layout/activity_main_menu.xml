@@ -1,51 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".MainMenu"
     android:gravity="center"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".MainMenu">
 
     <ImageView
-        android:layout_marginTop="10dp"
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
-        android:layout_height="200dp"
-        app:srcCompat="@drawable/logo_tall"
-        android:contentDescription="@string/logo_description"/>
+        android:layout_height="1dp"
+        android:layout_weight = "2.5"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/logo_description"
+        app:srcCompat="@drawable/logo_tall" />
 
     <Button
         android:id="@+id/navigation_button"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
-        android:layout_width="360dp"
-        android:layout_height="80dp"
-        android:textSize="26sp"
-        android:text="@string/navigation_button" />
+        android:layout_marginRight="20dp"
+        android:text="@string/navigation_button"
+        android:textSize="26sp" />
 
     <Button
         android:id="@+id/schedules_button"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="5dp"
-        android:layout_width="360dp"
-        android:layout_height="80dp"
-        android:textSize="26sp"
-        android:text="@string/schedules_button" />
+        android:layout_marginRight="20dp"
+        android:text="@string/schedules_button"
+        android:textSize="26sp" />
 
     <Button
         android:id="@+id/teams_button"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="5dp"
-        android:layout_width="360dp"
-        android:layout_height="80dp"
-        android:textSize="26sp"
-        android:text="@string/teams_button" />
+        android:layout_marginRight="20dp"
+        android:text="@string/teams_button"
+        android:textSize="26sp" />
 
     <Button
         android:id="@+id/general_button"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="5dp"
-        android:layout_width="360dp"
-        android:layout_height="80dp"
-        android:textSize="26sp"
-        android:text="@string/general_button" />
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/general_button"
+        android:textSize="26sp" />
 
 </LinearLayout>
