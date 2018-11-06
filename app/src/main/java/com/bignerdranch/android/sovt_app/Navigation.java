@@ -41,7 +41,10 @@ public class Navigation extends AppCompatActivity {
         mMountainButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //startActivity(new Intent(Navigation.this, MainMenu.class));
+                Log.d(TAG, "mMountainButton clicked");
+                Intent intent = new Intent(Navigation.this, PicoMap.class);
+                intent.putExtra("ViewType", "assets");
+                startActivity(intent);
             }
         });
 

@@ -21,6 +21,7 @@
         <activity android:name=".Navigation" />
         <activity android:name=".General" />
         <activity android:name=".PDFActivity"></activity>
+        <activity android:name=".PicoMap"></activity>
     </application>
 
 </manifest>
