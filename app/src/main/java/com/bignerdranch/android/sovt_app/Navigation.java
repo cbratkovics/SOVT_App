@@ -48,12 +48,15 @@ public class Navigation extends AppCompatActivity {
             }
         });
 
-        //button to display map of lodging
+        //button to display map of lodge
         mLodgeButton = (Button) findViewById(R.id.lodge_map);
         mLodgeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //startActivity(new Intent(Navigation.this, MainMenu.class));
+                Log.d(TAG, "mLodgeButton clicked");
+                Intent intent = new Intent(Navigation.this, LodgeMap.class);
+                intent.putExtra("ViewType", "assets");
+                startActivity(intent);
             }
         });
 

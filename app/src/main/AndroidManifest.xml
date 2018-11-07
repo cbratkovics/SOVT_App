@@ -22,6 +22,7 @@
         <activity android:name=".General" />
         <activity android:name=".PDFActivity"></activity>
         <activity android:name=".PicoMap"></activity>
+        <activity android:name=".LodgeMap"></activity>
     </application>
 
 </manifest>

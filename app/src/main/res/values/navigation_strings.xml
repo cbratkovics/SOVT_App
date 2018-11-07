@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="mountain_map">Mountain</string>
-    <string name="lodge_map">Lodging</string>
+    <string name="lodge_map">Lodge</string>
     <string name="directions">Google Maps</string>
 </resources>
