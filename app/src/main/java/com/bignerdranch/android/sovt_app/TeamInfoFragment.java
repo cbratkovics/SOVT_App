@@ -65,6 +65,7 @@ public class TeamInfoFragment extends Fragment {
             mDelegationTextView = (TextView) itemView.findViewById(R.id.delegation);
             mNameTextView = (TextView) itemView.findViewById(R.id.name);
             mEmailTextView = (TextView) itemView.findViewById(R.id.email);
+            mEmailTextView.setVisibility(View.GONE);
 
         }
 
@@ -79,6 +80,10 @@ public class TeamInfoFragment extends Fragment {
         public void onClick(View view){
             Toast.makeText(getActivity(), mContact.getContactName() + " clicked!",
                             Toast.LENGTH_SHORT).show();
+            if(mEmailTextView.getVisibility() == View.GONE)
+                mEmailTextView.setVisibility(View.VISIBLE);
+            else if(mEmailTextView.getVisibility() == View.VISIBLE)
+                mEmailTextView.setVisibility(View.GONE);
         }
 
     }
