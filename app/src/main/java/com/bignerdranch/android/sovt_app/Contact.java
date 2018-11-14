@@ -1,15 +1,26 @@
 package com.bignerdranch.android.sovt_app;
 
-public class DelegationContact {
+import java.util.UUID;
 
+public class Contact {
+
+    private UUID mId;
     private String mDelegationName;
     private String mContactName;
     private String mContactEmail;
 
-    public DelegationContact(String dName, String cName, String cEmail) {
-        this.mDelegationName = dName;
-        this.mContactName = cName;
-        this.mContactEmail = cEmail;
+    public Contact(String dName, String cName, String cEmail) {
+        //mId = UUID.randomUUID();
+        mDelegationName = dName;
+        mContactName = cName;
+        mContactEmail = cEmail;
+    }
+    public UUID getId() {
+        return mId;
+    }
+
+    public void setId(UUID id) {
+        mId = id;
     }
 
     public String getDelegationName() {
@@ -38,7 +49,7 @@ public class DelegationContact {
 
     @Override
     public String toString() {
-        return "DelegationContact{" +
+        return "Contact{" +
                 "mDelegationName='" + mDelegationName + '\'' +
                 ", mContactName='" + mContactName + '\'' +
                 ", mContactEmail='" + mContactEmail + '\'' +

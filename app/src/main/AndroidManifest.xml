@@ -23,6 +23,7 @@
         <activity android:name=".PDFActivity"></activity>
         <activity android:name=".PicoMap"></activity>
         <activity android:name=".LodgeMap"></activity>
+        <activity android:name=".TeamInfoActivity"></activity>
     </application>
 
 </manifest>

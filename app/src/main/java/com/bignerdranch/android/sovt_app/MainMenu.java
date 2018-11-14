@@ -50,7 +50,7 @@ public class MainMenu extends AppCompatActivity {
         mTeamsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainMenu.this, TeamInfo.class));
+                startActivity(new Intent(MainMenu.this, TeamInfoActivity.class));
             }
         });
 
