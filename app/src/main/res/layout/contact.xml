@@ -6,7 +6,9 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginBottom="8dp" >
+    android:layout_marginBottom="8dp" android:layout_marginTop="4dp"
+    android:paddingBottom="8dp" android:paddingTop="8dp"
+    android:background="@drawable/contact_style">
 
     <TextView
         android:id="@+id/delegation"
