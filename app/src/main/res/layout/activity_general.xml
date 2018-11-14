@@ -4,32 +4,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".General"
     android:gravity="center"
-    android:orientation="vertical">
+    android:orientation="vertical"
+     >
 
     <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="100dp"
     android:layout_weight="1"
     android:gravity="center"
-    android:orientation="horizontal">
+    android:orientation="horizontal" >
 
         <Button
-        android:id="@+id/home_button"
-        android:layout_width="wrap_content"
+        android:id="@+id/competition_button"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:text="@string/home_button"
+        android:text="@string/competition_button"
         android:layout_marginTop="5dp"
-        android:layout_marginLeft="5dp"/>
+        android:layout_marginStart="5dp"
+        android:textSize="20sp"
+        />
 
         <Button
-        android:id="@+id/info_button"
-        android:layout_width="wrap_content"
+        android:id="@+id/meals_button"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:text="@string/info_button"
+        android:text="@string/meals_button"
         android:layout_marginTop="5dp"
-        android:layout_marginRight="5dp"/>
+        android:layout_marginEnd="5dp"
+        android:textSize="20sp"/>
 
     </LinearLayout>
 
@@ -41,20 +45,22 @@
         android:orientation="horizontal">
 
             <Button
-            android:id="@+id/home_button2"
-            android:layout_width="wrap_content"
+            android:id="@+id/medical_button"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/home_button"
-            android:layout_marginLeft="5dp"/>
+            android:text="@string/medical_button"
+            android:layout_marginStart="5dp"
+            android:textSize="20sp"/>
 
             <Button
-            android:id="@+id/info_button2"
-            android:layout_width="wrap_content"
+            android:id="@+id/weather_button"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/info_button"
-            android:layout_marginRight="5dp"/>
+            android:text="@string/weather_button"
+            android:layout_marginEnd="5dp"
+            android:textSize="20sp"/>
 
     </LinearLayout>
 
@@ -66,20 +72,22 @@
         android:orientation="horizontal">
 
             <Button
-            android:id="@+id/home_button3"
-            android:layout_width="wrap_content"
+            android:id="@+id/parking_button"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/home_button"
-            android:layout_marginLeft="5dp"/>
+            android:text="@string/parking_button"
+            android:layout_marginStart="5dp"
+            android:textSize="20sp"/>
 
             <Button
-            android:id="@+id/info_button3"
-            android:layout_width="wrap_content"
+            android:id="@+id/friends_button"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/info_button"
-            android:layout_marginRight="5dp"/>
+            android:text="@string/friends_button"
+            android:layout_marginEnd="5dp"
+            android:textSize="20sp"/>
 
     </LinearLayout>
 
@@ -91,22 +99,24 @@
         android:orientation="horizontal">
 
             <Button
-            android:id="@+id/home_button4"
-            android:layout_width="wrap_content"
+            android:id="@+id/oath_button"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/home_button"
-            android:layout_marginLeft="5dp"
-            android:layout_marginBottom="5dp"/>
+            android:text="@string/oath_button"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="20sp"/>
 
             <Button
-            android:id="@+id/info_button4"
-            android:layout_width="wrap_content"
+            android:id="@+id/concussion_button"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/info_button"
-            android:layout_marginRight="5dp"
-            android:layout_marginBottom="5dp"/>
+            android:text="@string/concussion_button"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="20sp" />
 
     </LinearLayout>
 

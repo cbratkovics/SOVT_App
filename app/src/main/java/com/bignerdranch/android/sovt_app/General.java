@@ -13,9 +13,8 @@ import java.io.File;
 
 public class General extends AppCompatActivity {
 
-    private Button mHomeButton;
     private static final String TAG = "GeneralInfo";
-    private Button mInfoButton;
+    private Button mCompetitionButton;
 
     @Override
     public void onSaveInstanceState(Bundle savedInstanceState) {
@@ -30,22 +29,15 @@ public class General extends AppCompatActivity {
         Log.d(TAG, "GeneralInfo onCreate(Bundle) called");
 
         //return to home page button
-        mHomeButton = (Button) findViewById(R.id.home_button);
-        mHomeButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Log.d(TAG, "mHomeButton clicked");
-                startActivity(new Intent(General.this, MainMenu.class));
-            }
-        });
+
 
         //mInfo Button when clicked will open up a new activity "activity_pdf"
         //in which the pdf will be displayed
-        mInfoButton = (Button) findViewById(R.id.info_button);
-        mInfoButton.setOnClickListener(new View.OnClickListener() {
+        mCompetitionButton = (Button) findViewById(R.id.competition_button);
+        mCompetitionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.d(TAG, "mInfoButton clicked");
+                Log.d(TAG, "mCompetitionButton clicked");
                 Intent intent = new Intent(General.this, PDFActivity.class);
                 intent.putExtra("ViewType", "assets");
                 startActivity(intent);
