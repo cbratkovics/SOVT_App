@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.List;
 
@@ -49,7 +50,7 @@ public class TeamInfoFragment extends Fragment {
 
     //ContactHolder class
     //extends ViewHolder which inflates a layout into a view in the RecyclerView
-    private class ContactHolder extends RecyclerView.ViewHolder {
+    private class ContactHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         private Contact mContact;
         private TextView mDelegationTextView;
@@ -59,6 +60,7 @@ public class TeamInfoFragment extends Fragment {
         //constructor
         public ContactHolder(LayoutInflater inflater, ViewGroup parent){
             super(inflater.inflate(R.layout.contact, parent, false));
+            itemView.setOnClickListener(this);  //set onClickListener
 
             mDelegationTextView = (TextView) itemView.findViewById(R.id.delegation);
             mNameTextView = (TextView) itemView.findViewById(R.id.name);
@@ -71,6 +73,12 @@ public class TeamInfoFragment extends Fragment {
             mDelegationTextView.setText(mContact.getDelegationName());
             mNameTextView.setText(mContact.getContactName());
             mEmailTextView.setText(mContact.getContactEmail());
+        }
+
+        @Override
+        public void onClick(View view){
+            Toast.makeText(getActivity(), mContact.getContactName() + " clicked!",
+                            Toast.LENGTH_SHORT).show();
         }
 
     }
