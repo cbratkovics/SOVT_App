@@ -8,7 +8,8 @@
         android:icon="@drawable/ic_go_home"
         android:title="@string/go_home"
         app:showAsAction="ifRoom|collapseActionView"
-        app:actionViewClass="android.support.v7.widget.Button"/>
+        
+    />
 
     <!-- Settings, should always be in the overflow -->
     <item android:id="@+id/action_settings"
