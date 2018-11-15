@@ -5,7 +5,10 @@ import android.net.Uri;
 import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
@@ -13,7 +16,6 @@ import java.io.File;
 
 public class General extends AppCompatActivity {
 
-    private Button mHomeButton;
     private static final String TAG = "GeneralInfo";
     private Button mInfoButton;
 
@@ -28,16 +30,9 @@ public class General extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_general);
         Log.d(TAG, "GeneralInfo onCreate(Bundle) called");
-
-        //return to home page button
-        mHomeButton = (Button) findViewById(R.id.home_button);
-        mHomeButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Log.d(TAG, "mHomeButton clicked");
-                startActivity(new Intent(General.this, MainMenu.class));
-            }
-        });
+        Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
+        setSupportActionBar(myToolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         //mInfo Button when clicked will open up a new activity "activity_pdf"
         //in which the pdf will be displayed
@@ -52,5 +47,31 @@ public class General extends AppCompatActivity {
             }
         });
 
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.toolbar_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.action_settings:
+                // User chose the "Settings" item, show the app settings UI...
+                return true;
+
+            case R.id.go_home:
+                Intent intent = new Intent(General.this, MainMenu.class);
+                startActivity(intent);
+                return true;
+
+            default:
+                // If we got here, the user's action was not recognized.
+                // Invoke the superclass to handle it.
+                return super.onOptionsItemSelected(item);
+
+        }
     }
 }
