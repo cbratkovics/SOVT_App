@@ -1,2 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="general_schedule">General</string>
+    <string name="competition_schedule">Competition</string>
+    <string name="detail_general"><b>Sunday, March 18</b>\n
+    4:30 - 6:00pm \n \t\t Delegation Check-In Ticket Center at Pico Mountain\n
+    （Sunday night dinner is on your own. Pico Mountain’s Slopeside Pizzeria will be offering specials:\n
+        $10 cheese pizza and $12 one-topping pizzas from 4pm-8pm. Call ahead orders are accepted.）\n
+    6:35pm\n \t\t Line-up for the Parade of Athletes\n
+    6:45pm\n \t\t Parade of Athletes- procession through Pico Mountain base area\n
+    7:00 – 7:30pm\n \t\t Opening Ceremonies- outside at Pico Map- can be seen from Base Lodge\n
+        <b>Monday, March 19</b>\n
+    7:00am\n \t\t Shuttle Leaves Killington Grand Hotel\n
+    7:10am\n \t\t Shuttle Leaves Pinnacle Condos, Trail Creek Condos (Shuttles will run until 7:50AM)\n
+    7:50am\n \t\t Last Shuttle Pick-Up to Venues\n
+    7:30 – 8:30am\n \t\t Breakfast at Pico\n
+    8:00 – 8:30am\n \t\t Delegation Check-In (late check-ins only) at Pico Ticket Counter\n
+    7:45 – 8:10am\n \t\t Volunteer Check-in- Pico Ski Club\n
+    8:15am\n Shuttle departs Pico for XC Venue\n
+    8:15 – 8:40am\n \t\t Volunteer Training Alpine/Snowboard – Pico Ski Club (see map)\n
+        Cross-Country Skiing- Mountain Meadows XC Center Snowshoeing – Start line of snowshoe course (Base of Exhibition)\n
+    (see venue for time)
+        \n \t\tCoaches Meeting at each venue:
+        \n \t\t8:45am Cross Country Skiing – @ Finish Line of venue
+        \n \t\t8:45am Snowshoeing – @ Finish Line of venue
+        \n \t\t9:00am Alpine/Snowboard – @ base of Advanced Alpine Ski venue
+        \n
+    9:15am – 3:00pm\n \t\t Competition (various): see competition schedule\n
+    9:30am\n Alpine/Snowboard athletes meet with Mountain Guides Meet at Pico Mountain Map (Site of Opening Ceremonies)\n
+    10:00 – 2:00pm\n \t\t Olympic Town- Outside Main Lodge\n
+    12:00-1:30pm\n \t\t Lunch served at Pico Base Lodge (Shuttle will run from XC Venue to Pico for lunch)\n\n\n\n\n\n
+</string></resources>
