@@ -17,14 +17,14 @@ public class TeamInfo extends AppCompatActivity {
     @Override
     public void onSaveInstanceState(Bundle savedInstanceState) {
         super.onSaveInstanceState(savedInstanceState);
-        Log.i(TAG, "TeamInfo onSaveInstanceState");
+        Log.i(TAG, "onSaveInstanceState");
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_team_info);
-        Log.d(TAG, "TeamInfo onCreate(Bundle) called");
+        Log.d(TAG, "onCreate(Bundle) called");
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
