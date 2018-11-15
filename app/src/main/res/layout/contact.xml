@@ -6,26 +6,36 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginBottom="8dp" android:layout_marginTop="4dp"
-    android:paddingBottom="8dp" android:paddingTop="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp"
+    android:paddingStart="4dp"
     android:background="@drawable/contact_style">
 
     <TextView
         android:id="@+id/delegation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:paddingStart="4dp"
+        android:textColor="@android:color/black"
         android:text="Delegation" />
 
     <TextView
         android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:paddingStart="4dp"
+        android:textColor="@android:color/black"
         android:text="Name" />
 
     <TextView
         android:id="@+id/email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:paddingStart="4dp"
+        android:textColor="@android:color/black"
         android:text="Email" />
 
 
