@@ -27,7 +27,7 @@ public class Schedule extends AppCompatActivity {
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        
+
         LinearLayout mButtonGeneral = findViewById(R.id.general_schedule_button);
         LinearLayout mButtonCompetition = findViewById(R.id.competition_schedule_button);
         final ImageButton mImageButtonGeneral = findViewById(R.id.general_schedule_img);
