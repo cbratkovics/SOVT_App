@@ -32,6 +32,7 @@ public class Navigation extends AppCompatActivity {
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setTitle("SOVT");
 
         //button to display map of mountain
         mMountainButton = (Button) findViewById(R.id.mountain_map);

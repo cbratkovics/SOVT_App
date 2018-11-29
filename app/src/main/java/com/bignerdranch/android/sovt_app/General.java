@@ -41,6 +41,7 @@ public class General extends AppCompatActivity {
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setTitle("SOVT");
 
 
         //mCompetition Button when clicked will open up a new activity "activity_pdf"

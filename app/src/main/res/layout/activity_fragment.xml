@@ -13,12 +13,12 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:layout_weight="1"
-        android:background="?attr/colorPrimary"
+        android:background="@drawable/toolbar_style"
         android:elevation="4dp"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         app:layout_collapseMode="pin"
-        app:titleEnabled="false" />
+        app:titleEnabled="true" />
 
     <FrameLayout
         android:id="@+id/fragment_container"

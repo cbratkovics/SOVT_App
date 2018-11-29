@@ -33,6 +33,7 @@ public abstract class FragmentActivity extends AppCompatActivity {
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setTitle("SOVT");
 
         //get fragment manager to handle fragments
         FragmentManager fm = getSupportFragmentManager();
