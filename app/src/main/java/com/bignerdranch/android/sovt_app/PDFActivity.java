@@ -1,5 +1,6 @@
 package com.bignerdranch.android.sovt_app;
 
+import android.content.Intent;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
@@ -17,20 +18,22 @@ import com.github.barteksc.pdfviewer.listener.OnTapListener;
 public class PDFActivity extends AppCompatActivity {
 
     PDFView mPDFView;
+    int page;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pdf);
-
         mPDFView = (PDFView) findViewById(R.id.pdf_viewer);
+        Bundle extras = getIntent().getExtras();
 
         if(getIntent() != null) {
-            String viewType = getIntent().getStringExtra("ViewType");
+        int[] pages = extras.getIntArray("PAGE");
+            String viewType = extras.getString("ViewType");
             if(viewType.equals("assets")) {
                 mPDFView.fromAsset("Winter_Games_2018_Event_Guide_3.0.pdf")
                         .password(null) // If password is needed
-                        .defaultPage(0) //Open default page, can be remembered from last time
+                        .pages(pages)
                         .enableSwipe(true)
                         .swipeHorizontal(false)
                         .enableDoubletap(true) //Double tap to zoom

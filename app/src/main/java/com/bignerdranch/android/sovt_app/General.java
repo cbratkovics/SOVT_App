@@ -19,6 +19,13 @@ public class General extends AppCompatActivity {
 
     private static final String TAG = "GeneralInfo";
     private Button mCompetitionButton;
+    private Button mMealsButton;
+    private Button mMedicalButton;
+    private Button mWeatherButton;
+    private Button mParkingButton;
+    private Button mFriendsButton;
+    private Button mOathButton;
+    private Button mConcussionButton;
 
     @Override
     public void onSaveInstanceState(Bundle savedInstanceState) {
@@ -35,18 +42,137 @@ public class General extends AppCompatActivity {
         setSupportActionBar(myToolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        //return to home page button
 
-
-        //mInfo Button when clicked will open up a new activity "activity_pdf"
-        //in which the pdf will be displayed
+        //mCompetition Button when clicked will open up a new activity "activity_pdf"
+        //in which the relevant pages of the pdf will be displayed
         mCompetitionButton = (Button) findViewById(R.id.competition_button);
         mCompetitionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                int[] page = new int[2];
+                page[0] = 3;
+                page[1] = 4;
                 Log.d(TAG, "mCompetitionButton clicked");
                 Intent intent = new Intent(General.this, PDFActivity.class);
-                intent.putExtra("ViewType", "assets");
+                Bundle extras = new Bundle();
+                extras.putString("ViewType", "assets");
+                extras.putIntArray("PAGE", page);
+                intent.putExtras(extras);
+                startActivity(intent);
+            }
+        });
+
+        mMealsButton = (Button) findViewById(R.id.meals_button);
+        mMealsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int[] page = new int[2];
+                page[0] = 4;
+                page[1] = 5;
+                Log.d(TAG, "mMealsButton clicked");
+                Intent intent = new Intent(General.this, PDFActivity.class);
+                Bundle extras = new Bundle();
+                extras.putString("ViewType", "assets");
+                extras.putIntArray("PAGE", page);
+                intent.putExtras(extras);
+                startActivity(intent);
+            }
+        });
+
+        mMedicalButton = (Button) findViewById(R.id.medical_button);
+        mMedicalButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int[] page = new int[1];
+                page[0] = 7;
+                Log.d(TAG, "mMedicalButton clicked");
+                Intent intent = new Intent(General.this, PDFActivity.class);
+                Bundle extras = new Bundle();
+                extras.putString("ViewType", "assets");
+                extras.putIntArray("PAGE", page);
+                intent.putExtras(extras);
+                startActivity(intent);
+            }
+        });
+
+        mWeatherButton = (Button) findViewById(R.id.weather_button);
+        mWeatherButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int[] page = new int[1];
+                page[0] = 8;
+                Log.d(TAG, "mWeatherButton clicked");
+                Intent intent = new Intent(General.this, PDFActivity.class);
+                Bundle extras = new Bundle();
+                extras.putString("ViewType", "assets");
+                extras.putIntArray("PAGE", page);
+                intent.putExtras(extras);
+                startActivity(intent);
+            }
+        });
+
+        mParkingButton = (Button) findViewById(R.id.parking_button);
+        mParkingButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int[] page = new int[1];
+                page[0] = 8;
+                Log.d(TAG, "mParkingButton clicked");
+                Intent intent = new Intent(General.this, PDFActivity.class);
+                Bundle extras = new Bundle();
+                extras.putString("ViewType", "assets");
+                extras.putIntArray("PAGE", page);
+                intent.putExtras(extras);
+                startActivity(intent);
+            }
+        });
+
+        mFriendsButton = (Button) findViewById(R.id.friends_button);
+        mFriendsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int[] page = new int[1];
+                page[0] = 9;
+                Log.d(TAG, "mFriendsButton clicked");
+                Intent intent = new Intent(General.this, PDFActivity.class);
+                Bundle extras = new Bundle();
+                extras.putString("ViewType", "assets");
+                extras.putIntArray("PAGE", page);
+                intent.putExtras(extras);
+                startActivity(intent);
+            }
+        });
+
+        mOathButton = (Button) findViewById(R.id.oath_button);
+        mOathButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int[] page = new int[3];
+                page[0] = 10;
+                page[1] = 11;
+                page[2] = 12;
+                Log.d(TAG, "mOathButton clicked");
+                Intent intent = new Intent(General.this, PDFActivity.class);
+                Bundle extras = new Bundle();
+                extras.putString("ViewType", "assets");
+                extras.putIntArray("PAGE", page);
+                intent.putExtras(extras);
+                startActivity(intent);
+            }
+        });
+
+        mConcussionButton = (Button) findViewById(R.id.concussion_button);
+        mConcussionButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int[] page = new int[1];
+                page[0] = 13;
+                Log.d(TAG, "mConcussionButton clicked");
+                Intent intent = new Intent(General.this, PDFActivity.class);
+                Bundle extras = new Bundle();
+                extras.putString("ViewType", "assets");
+                extras.putIntArray("PAGE", page);
+                intent.putExtras(extras);
                 startActivity(intent);
             }
         });
