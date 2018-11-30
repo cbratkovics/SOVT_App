@@ -17,53 +17,56 @@ import android.view.MenuItem;
 public class Schedule extends AppCompatActivity {
 
     private static final String TAG = "Schedule";
+    private static final String KEY_INDEX = "View";
+    private FragmentTransaction transaction;
+    private int mTransactionIndex = 0;
+    private ImageButton mImageButtonGeneral;
+    private ImageButton mImageButtonCompetition;
+    private LinearLayout mButtonGeneral;
+    private LinearLayout mButtonCompetition;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Log.d(TAG , "Schedule-onCreate");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_schedule);
-        Log.d(TAG , "onCreate Started!");
 
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        LinearLayout mButtonGeneral = findViewById(R.id.general_schedule_button);
-        LinearLayout mButtonCompetition = findViewById(R.id.competition_schedule_button);
-        final ImageButton mImageButtonGeneral = findViewById(R.id.general_schedule_img);
-        final ImageButton mImageButtonCompetition= findViewById(R.id.competition_schedule_img);
+        mButtonGeneral = findViewById(R.id.general_schedule_button);
+        mButtonCompetition = findViewById(R.id.competition_schedule_button);
+        mImageButtonGeneral = findViewById(R.id.general_schedule_img);
+        mImageButtonCompetition= findViewById(R.id.competition_schedule_img);
 
-        Fragment generalSchedule= new GeneralSchedule();
-        FragmentTransaction transaction = getFragmentManager().beginTransaction();
-        transaction.replace(R.id.schedule, generalSchedule);
-        transaction.addToBackStack(null);
-        transaction.commit();
+        if(savedInstanceState != null){
+            mTransactionIndex = savedInstanceState.getInt(KEY_INDEX);
+        }
+        setUpView();
 
         mButtonGeneral.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setDefaultIc(mImageButtonGeneral,mImageButtonCompetition);
-                mImageButtonGeneral.setImageResource(R.drawable.ic_action_schedule_pressed);
-
-                Fragment generalSchedule= new GeneralSchedule();
-                FragmentTransaction transaction = getFragmentManager().beginTransaction();
-                transaction.replace(R.id.schedule, generalSchedule);
-                transaction.commit();
+                mTransactionIndex = 0;
+                setUpView();
             }
         });
 
         mButtonCompetition.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setDefaultIc(mImageButtonGeneral,mImageButtonCompetition);
-                mImageButtonCompetition.setImageResource(R.drawable.ic_action_schedule_pressed);
-
-                Fragment competitionSchedule= new CompetitionSchedule();
-                FragmentTransaction transaction = getFragmentManager().beginTransaction();
-                transaction.replace(R.id.schedule, competitionSchedule);
-                transaction.commit();
+                mTransactionIndex = 1;
+                setUpView();
             }
         });
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle savedInstanceState){
+        Log.d(TAG,"Schedule-onSaveInstanceState");
+        super.onSaveInstanceState(savedInstanceState);
+        savedInstanceState.putInt(KEY_INDEX, mTransactionIndex);
     }
 
     @Override
@@ -92,8 +95,29 @@ public class Schedule extends AppCompatActivity {
         }
     }
 
-    public void setDefaultIc(ImageButton general, ImageButton competition){
-        general.setImageResource(R.drawable.ic_action_schedule);
-        competition.setImageResource(R.drawable.ic_action_schedule);
+    public void setDefaultIc(){
+        mImageButtonGeneral.setImageResource(R.drawable.ic_action_schedule);
+        mImageButtonCompetition.setImageResource(R.drawable.ic_action_schedule);
+    }
+
+    public void setUpView(){
+        switch(mTransactionIndex){
+            case 0:
+                setDefaultIc();
+                mImageButtonGeneral.setImageResource(R.drawable.ic_action_schedule_pressed);
+                Fragment generalSchedule= new GeneralSchedule();
+                transaction = getFragmentManager().beginTransaction();
+                transaction.replace(R.id.schedule, generalSchedule);
+                transaction.commit();
+                break;
+            case 1:
+                setDefaultIc();
+                mImageButtonCompetition.setImageResource(R.drawable.ic_action_schedule_pressed);
+                Fragment competitionSchedule= new CompetitionSchedule();
+                transaction = getFragmentManager().beginTransaction();
+                transaction.replace(R.id.schedule, competitionSchedule);
+                transaction.commit();
+                break;
+        }
     }
 }
