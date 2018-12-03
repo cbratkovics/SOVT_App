@@ -1,42 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <!-- Contact fragment (view) that the RecyclerView will contain -->
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="4dp"
-    android:layout_marginLeft="4dp"
-    android:layout_marginRight="4dp"
-    android:paddingBottom="8dp"
-    android:paddingTop="8dp"
-    android:paddingStart="4dp"
-    android:background="@drawable/contact_style">
+    android:layout_marginBottom="1dp"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+    android:layout_marginTop="2dp"
+    android:background="@drawable/contact_style"
+    android:orientation="vertical"
+    android:padding="4dp">
 
     <TextView
         android:id="@+id/delegation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingStart="4dp"
-        android:textColor="@android:color/black"
-        android:text="Delegation" />
+        android:paddingEnd = "4dp"
+        android:text="@string/delegation"
+        android:textColor="@android:color/black" />
 
     <TextView
         android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingStart="4dp"
-        android:textColor="@android:color/black"
-        android:text="Name" />
+        android:paddingEnd = "4dp"
+        android:text="@string/name"
+        android:textColor="@android:color/black" />
 
     <TextView
         android:id="@+id/email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingStart="4dp"
-        android:textColor="@android:color/black"
-        android:text="Email" />
+        android:paddingEnd = "4dp"
+        android:text="@string/email"
+        android:textColor="@android:color/black" />
 
 
 </LinearLayout>

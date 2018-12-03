@@ -22,9 +22,11 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_weight="1"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/button_style"
         android:text="@string/navigation_button"
         android:textSize="26sp" />
 
@@ -33,9 +35,11 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_weight="1"
-        android:layout_marginLeft="20dp"
         android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/button_style"
         android:text="@string/schedules_button"
         android:textSize="26sp" />
 
@@ -44,9 +48,11 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_weight="1"
-        android:layout_marginLeft="20dp"
         android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/button_style"
         android:text="@string/teams_button"
         android:textSize="26sp" />
 
@@ -55,10 +61,11 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_weight="1"
-        android:layout_marginLeft="20dp"
         android:layout_marginTop="5dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_style"
         android:text="@string/general_button"
         android:textSize="26sp" />
 
