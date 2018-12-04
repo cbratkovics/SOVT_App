@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="delegation">Delegation</string>
-    <string name="name">Delegation</string>
-    <string name="email">Delegation</string>
-
-
+    <string name="name">Name</string>
+    <string name="email">Email</string>
 </resources>
