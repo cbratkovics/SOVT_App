@@ -20,11 +20,20 @@
         app:layout_collapseMode="pin"
         app:titleEnabled="false" />
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_weight = "2.5"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/logo_description"
+        app:srcCompat="@drawable/logo_tall" />
+
     <Button
         android:id="@+id/mountain_map"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="5dp"
@@ -37,15 +46,16 @@
         android:id="@+id/lodge_map"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="10dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginBottom="5dp"
+        android:layout_marginBottom="15dp"
         android:layout_weight="2.5"
         android:background="@drawable/button_style"
         android:text="@string/lodge_map"
         android:textSize="26sp" />
 
+    <!--
     <Button
         android:id="@+id/directions"
         android:layout_width="match_parent"
@@ -58,5 +68,6 @@
         android:background="@drawable/button_style"
         android:text="@string/directions"
         android:textSize="26sp" />
+    -->
 
 </LinearLayout>

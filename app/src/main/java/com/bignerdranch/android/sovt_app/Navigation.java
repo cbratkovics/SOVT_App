@@ -15,7 +15,7 @@ public class Navigation extends AppCompatActivity {
 
     private Button mMountainButton;
     private Button mLodgeButton;
-    private Button mDirectionsButton;
+    //private Button mDirectionsButton;
     private static final String TAG = "Navigation";
 
     @Override
@@ -58,6 +58,7 @@ public class Navigation extends AppCompatActivity {
             }
         });
 
+        /**
         //button to allow users to access google maps for directions
         mDirectionsButton = (Button) findViewById(R.id.directions);
         mDirectionsButton.setOnClickListener(new View.OnClickListener() {
@@ -66,6 +67,7 @@ public class Navigation extends AppCompatActivity {
                 //startActivity(new Intent(Navigation.this, MainMenu.class));
             }
         });
+         */
 
     }
 
